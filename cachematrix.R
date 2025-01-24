@@ -3,7 +3,7 @@
 
 
 ## this function is used to calculate the inverse of squared and 
-## non squared matricies
+## non-squared matricies
 makeCacheMatrix <- function(x = matrix()) {
     i = NULL ## initializes inverse as NULL
     set = function(y){
@@ -30,6 +30,6 @@ cacheSolve <- function (x,...){ ## gets cached data
   data <- x$get()
   i <- solve(data,... ) ## calculates inverse value
   x$setinverse(i)
-  i  ## returns matrix that is the inverse of x
+  i  ## returns a matrix that is the inverse of x
 }
 
